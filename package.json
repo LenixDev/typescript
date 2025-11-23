@@ -2,8 +2,8 @@
   "name": "lenix-fivem-typescript-template",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch"
+    "build": "tsc --build",
+    "watch": "tsc --build --watch"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
