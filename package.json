@@ -2,13 +2,21 @@
   "name": "lenix-fivem-typescript-template",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx tsc --build",
-    "watch": "npx tsc --build --watch"
+    "build": "npm run build:client && npm run build:server && npm run build:web",
+    "build:client": "esbuild client/main.ts --bundle --outfile=client/build/main.js --platform=node --target=es2020 && terser client/build/main.js -o client/build/main.js -c -m",
+    "build:server": "esbuild server/main.ts --bundle --outfile=server/build/main.js --platform=node --target=es2020 && terser server/build/main.js -o server/build/main.js -c -m",
+    "build:web": "esbuild web/src/main.ts --bundle --outfile=web/build/main.js --platform=browser --target=es2020 && terser web/build/main.js -o web/build/main.js -c -m",
+    "watch": "npm run watch:client & npm run watch:server & npm run watch:web",
+    "watch:client": "esbuild client/main.ts --bundle --outfile=client/build/main.js --platform=node --target=es2020 --watch",
+    "watch:server": "esbuild server/main.ts --bundle --outfile=server/build/main.js --platform=node --target=es2020 --watch",
+    "watch:web": "esbuild web/src/main.ts --bundle --outfile=web/build/main.js --platform=browser --target=es2020 --watch"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
     "@types/node": "^20.0.0",
     "@citizenfx/client": "latest",
-    "@citizenfx/server": "latest"
+    "@citizenfx/server": "latest",
+    "esbuild": "^0.24.2",
+    "terser": "^5.37.0"
   }
 }

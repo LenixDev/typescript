@@ -7,11 +7,5 @@
     "skipLibCheck": true,
     "lib": ["ES2020", "DOM"],
     "types": ["@citizenfx/client", "@citizenfx/server"]
-  },
-  "files": [],
-  "references": [
-    { "path": "./client" },
-    { "path": "./server" },
-    { "path": "./web/src" }
-  ]
+  }
 }
