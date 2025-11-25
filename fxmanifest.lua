@@ -4,11 +4,11 @@ game 'gta5'
 author 'Trippler'
 version '1.0.0'
 
-client_script 'client/build/main.js'
-server_script 'server/build/main.js'
+client_script 'backend/client/build/main.js'
+server_script 'backend/server/build/main.js'
 
-ui_page 'web/index.html'
+ui_page 'frontend/index.html'
 files {
-  'web/index.html',
-  'web/build/main.js'
+  'frontend/index.html',
+  'frontend/build/main.js'
 }
