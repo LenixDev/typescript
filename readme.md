@@ -14,14 +14,6 @@ Build all projects (client, server, web):
 npm run build
 ```
 
-This will:
-- Bundle all TypeScript files into single `main.js` per project
-- Minify and compress the output (unreadable)
-- Output to:
-  - `client/build/main.js`
-  - `server/build/main.js`
-  - `web/build/main.js`
-
 ## Watch Mode
 
 Auto-rebuild on file changes:
@@ -37,9 +29,10 @@ npm run build:server
 npm run build:web
 ```
 
-## Structure
+## Individual Watchs
 
-- `client/` - Client-side FiveM scripts
-- `server/` - Server-side FiveM scripts
-- `web/` - NUI/UI scripts
-- Each folder has its own `tsconfig.json` for configuration
+```bash
+npm run watch:client
+npm run watch:server
+npm run watch:web
+```
