@@ -1,2 +1,0 @@
-// Web-specific types
-export {}
