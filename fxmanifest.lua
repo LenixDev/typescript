@@ -4,11 +4,11 @@ game 'gta5'
 author 'Lenix'
 version '1.0.0'
 
-client_script 'backend/build/client.js'
-server_script 'backend/build/server.js'
+client_script 'build/client.js'
+server_script 'build/server.js'
 
-ui_page 'frontend/index.html'
+ui_page 'web/public/index.html'
 files {
-  'frontend/index.html',
-  'frontend/build/index.js'
+  'web/public/index.html',
+  'build/web.js'
 }
