@@ -1,5 +1,5 @@
 import './features'
-import './utils/dom'
+import './utils/dom/chat'
 
 export let messageCount = 0
 export let isFocused = false

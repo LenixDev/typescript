@@ -9,7 +9,7 @@ document.documentElement.className = '[scrollbar-width:none]'
 createElement({
   parent: 'body',
   id: 'root',
-  className: 'select-none bg-black w-full h-screen'
+  className: 'select-none w-full h-screen'
 })
 
 createElement({

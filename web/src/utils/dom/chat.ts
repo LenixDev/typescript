@@ -1,6 +1,6 @@
-import useUnfocus from "../hooks/useUnfocus"
-import { isFocused } from ".."
-import useFocus from "../hooks/useFocus"
+import useUnfocus from "../../hooks/useUnfocus"
+import { isFocused } from "../.."
+import useFocus from "../../hooks/useFocus"
 
 const block = document.getElementById('block')
 const outside = document.getElementById('root') || document.getElementById('container')
