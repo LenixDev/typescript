@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Lenix'
+author 'https://github.com/LenixDev'
 version '1.0.0'
 
 client_script 'build/client.js'
