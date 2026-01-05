@@ -5,7 +5,7 @@
 ├── shared/      - Shared types, constants, utils
 ├── client/      - FiveM client (JS runtime)
 ├── server/      - FiveM server (Node runtime)
-├── web/         - Browser UI (NUI)
+├── nui/         - FiveM Browser UI (NUI)
 └── build/       - Compiled output
 ```
 
@@ -21,14 +21,14 @@ reinstall (unsure to install the latest node_modules again)
 ```bash
 build:client
 build:server
-build:web
+build:nui
 build:style
 ```
 - Watch a specific side
 ```bash
 watch:client
 watch:server
-watch:web
+watch:nui
 watch:style
 ```
 
