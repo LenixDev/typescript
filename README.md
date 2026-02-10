@@ -4,8 +4,8 @@
 ```
 ├── shared/      - Shared types, constants, utils
 ├── client/      - FiveM client (JS runtime)
+   └── nui/         - FiveM Browser UI (NUI)
 ├── server/      - FiveM server (Node runtime)
-├── nui/         - FiveM Browser UI (NUI)
 └── build/       - Compiled output
 ```
 
